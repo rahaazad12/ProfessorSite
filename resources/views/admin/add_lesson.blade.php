@@ -7,14 +7,10 @@
         <div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
             <div class="panel panel-default panel-border">
                 <div class="panel-heading">افزودن درس</div>
-                <div style="text-align: left;margin-bottom: 10px;margin-left: 10px ;margin-top: 10px">
-                    <a href="{{url()->previous()}}" class="btn btn-danger">بازگشت</a>
-                </div>
                 <div class="panel-body">
                     <form method="POST" class="form-horizontal" role="form" action="{{ url('admin/add_lesson') }}"
                           enctype="multipart/form-data">
                         {{ csrf_field() }}
-
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="name">نام درس</label>
                             <div class="col-md-6">
@@ -43,7 +39,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-6" style="margin-right: 25%">
-                                <input type="submit" class="btn btn-success full-width" name="submit" value="ثبت">
+                                <input type="submit" class="btn btn-success" style="margin-right: 50%" name="submit" value="ثبت">
                             </div>
                         </div>
                     </form>

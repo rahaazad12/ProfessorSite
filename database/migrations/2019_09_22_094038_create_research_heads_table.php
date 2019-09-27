@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStudentResearchTable extends Migration
+class CreateResearchHeadsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateStudentResearchTable extends Migration
      */
     public function up()
     {
-        Schema::create('student_research', function (Blueprint $table) {
+        Schema::create('research_heads', function (Blueprint $table) {
             $table->increments('id')->index();
-            $table->string('poster');
-            $table->string('pdf');
-            $table->string('ppt');
+            $table->string('name');
+            $table->string('exp');
+            $table->string('image');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateStudentResearchTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('student_research');
+        Schema::dropIfExists('research_heads');
     }
 }

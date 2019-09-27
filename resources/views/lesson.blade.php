@@ -9,93 +9,51 @@
         <h3 style="text-align: center;margin-bottom:0;margin-top: 2px;color: whitesmoke"><b>آزمایشگاه نانو مواد مگنتو
                 اپتیکی</b></h3></div>
     <div
-            style="background-image:url('{{asset("image/lesson.jpg")}}') ; background-repeat: no-repeat;width:100%;height:45%">
+            style="background-image:url('{{asset("image/lesson.jpg")}}') ;background-size: cover;
+                    background-repeat: no-repeat;width:100%;height:45%">
     </div>
     @include('layouts.navebar')
     <div style="text-align: right;margin-bottom:10px">
         <ul>
             <li><a href="{{ url('/') }}">خانه</a></li>
             <li><a href="{{ url('/research') }}">سرفصل های تحقیقاتی</a></li>
-            <li><a href="{{ url('/student') }}">گروه های دانشجویی</a></li>
+            <li><a href="{{ url('/student') }}">دانشجویان</a></li>
             <li><a href="{{ url('/publication') }}">مقالات</a></li>
-            <li><a  href="{{ url('/laboratory') }}">آزمایشگاه</a></li>
+            <li><a href="{{ url('/laboratory') }}">آزمایشگاه</a></li>
             <li><a class="active" href="{{ url('/lesson') }}">درس ها</a></li>
-
         </ul>
     </div>
-
-
 @endsection
 
 @section('content')
-    <!-- First Photo Grid-->
-    <div class="w3-row-padding">
-        <div class="w3-third w3-container w3-margin-bottom">
-            <img src="{{asset("/image/mountains.jpg")}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-            </div>
-        </div>
-        <div class="w3-third w3-container w3-margin-bottom">
-            <img src="{{asset("/image/mountains.jpg")}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-            </div>
-        </div>
-        <div class="w3-third w3-container">
-            <img src="{{asset("/image/mountains.jpg")}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
+    <div class="container-fluid" style="text-align: -webkit-center">
+        <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1" style="width:60%;margin-right:20%">
+            <div class="panel panel-default panel-border">
+                <div class="panel-heading">درس ها</div>
+                <div class="panel-body" style="text-align: center">
+                    <table class="table table-bordered table-responsive">
+                        <tr>
+                            <th width="50%"> نام درس</th>
+                            <th>امکانات</th>
+                        </tr>
+                        @foreach($lessons as $lesson)
+                            <tr>
+                                <td style="width:20%">
+                                    {{ $lesson ['name'] }}
+                                </td>
+
+                                <td>
+                                    <a href="{{ $lesson['sample'] }}"> نمونه سوال امتحانی</a>
+                                    <br>
+                                    <a href="{{ $lesson['ppt'] }}"> پاورپوینت درس</a>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- Second Photo Grid-->
-    <div class="w3-row-padding">
-        <div class="w3-third w3-container w3-margin-bottom">
-            <img src="{{asset("/image/mountains.jpg")}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-            </div>
-        </div>
-        <div class="w3-third w3-container w3-margin-bottom">
-            <img src="{{asset("/image/mountains.jpg")}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-            </div>
-        </div>
-        <div class="w3-third w3-container">
-            <img src="{{asset("/image/mountains.jpg")}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Pagination -->
-    <div class="w3-center w3-padding-32">
-        <div class="w3-bar">
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-            <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-        </div>
-    </div>
-
     <div class="footer">
         <p>Powered by shspanol12@gmail.com</p>
     </div>

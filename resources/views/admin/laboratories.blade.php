@@ -1,6 +1,7 @@
-@extends('admin.layouts.app')
+ @extends('admin.layouts.app')
 
 @section('content')
+    <br>
     <div class="container-fluid" style="text-align: -webkit-center">
         <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
             <div class="panel panel-default panel-border">
@@ -8,7 +9,7 @@
                 <div class="panel-body" style="text-align: center">
                     <table id="mytable" class="table table-bordered table-responsive">
                         <tr>
-                            <th> نام آزمایش</th>
+                            <th style="width: 50%"> نام آزمایش</th>
                             <th>امکانات</th>
                         </tr>
                         @foreach($laboratories as $laboratory)
@@ -26,7 +27,7 @@
                             </tr>
                         @endforeach
                     </table>
-                    <a class="btn btn-info" href="{{url('admin/add_laboratory')}}">
+                    <a class="btn btn-success" href="{{url('admin/add_laboratory')}}">
                         افزودن آزمایش
                     </a>
                 </div>

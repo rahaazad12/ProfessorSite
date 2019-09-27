@@ -16,9 +16,12 @@ class CreatePublicationsTable extends Migration
         Schema::create('publications', function (Blueprint $table) {
             $table->increments('id')->index();
             $table->string('name');
+            $table->string('writers');
+            $table->string('details');
             $table->string('type');
             $table->string('link');
             $table->string('years');
+            $table->string('pdf');
             $table->timestamps();
         });
     }

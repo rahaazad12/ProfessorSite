@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateResearchResourceTable extends Migration
+class CreateStudentResearch extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,15 @@ class CreateResearchResourceTable extends Migration
      */
     public function up()
     {
-        Schema::create('research_resource', function (Blueprint $table) {
+        Schema::create('student_researches', function (Blueprint $table) {
+            $table->increments('id')->index();
             $table->unsignedInteger('student_id');
-            $table->unsignedInteger('resource_id');
+            $table->string('name');
+            $table->string('poster');
+            $table->string('pdf');
+            $table->string('ppt');
             $table->foreign('student_id')->references('id')->on('students')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreign('resource_id')->references('id')->on('resources')->onUpdate('cascade')->onDelete('cascade');
-
+            $table->timestamps();
         });
     }
 
@@ -29,6 +32,6 @@ class CreateResearchResourceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reaserch_resource');
+        Schema::dropIfExists('student_researches');
     }
 }

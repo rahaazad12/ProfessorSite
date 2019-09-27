@@ -14,7 +14,10 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/PersianDatePicker.min.css') }}"/>
 <link rel="stylesheet" type="text/css" href="{{ asset('css/angular-material.min.css') }}"/>
 <link rel="stylesheet" type="text/css" href="{{ asset('css/loading-bar.css') }}"/>
-
+<link rel="stylesheet" type="text/css" href="{{ asset('css/simditor.css') }}"/>
+<script type="text/javascript" src="{{ asset('js/module.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/hotkeys.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/simditor.js') }}"></script>
 
 <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>

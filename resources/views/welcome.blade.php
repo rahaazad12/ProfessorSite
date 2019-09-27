@@ -7,7 +7,8 @@
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
                 class="fa fa-bars"></i></span>
     <div class="w3-container"
-         style="background-image:url('{{asset("image/mountains.jpg")}}'); background-repeat: no-repeat">
+         style="background-image:url('{{asset("image/mountains.jpg")}}');background-size: cover;
+                 background-repeat: no-repeat">
         <div style="text-align: right;width: 15px;height: 15px"><img src="{{asset("image/download.png")}}"
                                                                      style="text-align: right"></div>
         <h1 style="text-align: center"><b>نانو فیزیک و فوتونیک</b></h1>

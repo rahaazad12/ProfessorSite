@@ -42,7 +42,7 @@
                             </tr>
                         @endforeach
                     </table>
-                    <a class="btn btn-info" href="{{url('admin/add_publication')}}">
+                    <a class="btn btn-success" href="{{url('admin/add_publication')}}">
                         افزودن مقاله
                     </a>
                 </div>

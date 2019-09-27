@@ -11,7 +11,7 @@
                     <a href="{{url()->previous()}}" class="btn btn-danger">بازگشت</a>
                 </div>
                 <div class="panel-body">
-                    <form method="POST" class="form-horizontal" role="form" action="{{ url('admin/lesson'.$lesson->id) }}"
+                    <form method="POST" class="form-horizontal" role="form" action="{{ url('admin/lesson/'.$lesson->id) }}"
                           enctype="multipart/form-data">
                         {{ csrf_field() }}
 

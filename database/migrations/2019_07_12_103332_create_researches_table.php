@@ -17,6 +17,8 @@ class CreateResearchesTable extends Migration
             $table->increments('id')->index();
             $table->unsignedInteger('student_id')->index();
             $table->string('name');
+            $table->string('pdf');
+            $table->string('ppt');
             $table->string('poster');
             $table->timestamps();
             $table->foreign('student_id')->references('id')->on('students')->onUpdate('cascade')->onDelete('cascade');
