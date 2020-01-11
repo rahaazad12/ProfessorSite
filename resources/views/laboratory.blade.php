@@ -32,14 +32,14 @@
     <div class="row" style="width:90%;margin-right:50px;margin-top: 50px">
         @foreach($laboratories as $laboratory)
             <div style="border: black; border-style: solid; margin-top: 10px; width: 100%; padding: 10px">
-                <div style="width:100%;border: black; text-align: center">
+                <div style="width:100%;border: black; text-align: right">
                     <h3><b>
                             {{$laboratory['name']}}
                         </b></h3>
                 </div>
-                <div style="text-align: center">
+                <div style="text-align: left">
                     <a href="{{ $laboratory['image'] }}">
-                        <img src="{{ $laboratory['image'] }}" style="width:50%"></a>
+                        <img src="{{ $laboratory['image'] }}" style="width:25%;height: 25%"></a>
 
                 </div>
                 <div style="width:100%;border: black">

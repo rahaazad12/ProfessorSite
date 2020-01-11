@@ -18,7 +18,7 @@
             <li><a href="{{ url('/research') }}">سرفصل های تحقیقاتی</a></li>
             <li><a class="active" href="{{ url('/student') }}">دانشجویان</a></li>
             <li><a href="{{ url('/publication') }}">مقالات</a></li>
-            <li><a href="{{ url('/laboratory') }}">آزمایشگاه</a></li>
+            <li><a href="{{ url('/laboratory') }}">آزمایشگاه</a>git</li>
             <li><a href="{{ url('/lesson') }}">درس ها</a></li>
 
         </ul>

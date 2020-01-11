@@ -17,10 +17,10 @@
                                 <td>{{$laboratory->name}}</td>
                                 <td>
                                     <a class="btn btn-danger"
-                                       href="{{url('admin/$laboratories/'.$laboratory->id.'/delete')}}">
+                                       href="{{url('admin/laboratory/'.$laboratory->id.'/delete')}}">
                                         <span class="glyphicon glyphicon-remove"></span>
                                     </a>
-                                    <a class="btn btn-info" href="{{url('admin/$laboratories/'.$laboratory->id)}}">
+                                    <a class="btn btn-info" href="{{url('admin/laboratory/'.$laboratory->id)}}">
                                         <span class="glyphicon glyphicon-pencil"></span>
                                     </a>
                                 </td>

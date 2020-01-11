@@ -12,7 +12,7 @@
                       enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <label class="control-label col-sm-3" for="bu1">فایل 1 </label>
+                        <label class="control-label col-sm-3" for="bu1">رزومه </label>
                         <div class="col-md-6">
                             <div class="input-group">
                                 <input type="file" class="form-control" id="bu1" name="bu1_path"
@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-3" for="bu2">فایل 2 </label>
+                        <label class="control-label col-sm-3" for="bu2">مقالات ارجاع داده شده</label>
                         <div class="col-md-6">
                             <div class="input-group">
                                 <input type="file" class="form-control" id="bu2" name="bu2_path"

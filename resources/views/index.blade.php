@@ -34,14 +34,14 @@
                 @if($home['bu1_path'] != null)
                     <a href="{{$home['bu1_path']}}">
                         <button type="submit" class="btn btn-success"
-                                style="margin-right:30px" name="submit">فایل 1
+                                style="margin-right:30px" name="submit">رزومه
                         </button>
                     </a>
                 @endif
                 @if($home['bu2_path'] != null)
                     <a href="{{$home['bu2_path']}}">
                         <button type="submit" class="btn btn-success"
-                                style="margin-right: 350px" name="submit">فایل 2
+                                style="margin-right: 30px" name="submit">مقالات ارجاع داده شده
                         </button>
                     </a>
                 @endif

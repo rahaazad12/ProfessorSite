@@ -9,25 +9,25 @@
         <p style="text-align: right;margin-right:10px">استادیار گروه فیزیک</p>
 
         <br>
-        <p style="text-align: right;margin-right:10px"> لینک ها: </p>
+        <p style="text-align:right;margin-right:10px"> لینک ها: </p>
         <a href="http://staff.alzahra.ac.ir/ansari/%D8%B5%D9%81%D8%AD%D9%87%D9%86%D8%AE%D8%B3%D8%AA/tabid/3321/Default.aspx">
-            <p style="text-align: right;margin-right:6px;color: #2ca02c">
-                دانشگاه الزهرا
+            <p style="text-align: left;margin-right:6px;color: #2ca02c">
+                Alzahra University
             </p></a>
 
         <a href="https://www.scopus.com/authid/detail.uri?authorId=37074063700"><p
-                    style="text-align: right;margin-right:10px;color: #2ca02c">
-                اسکاپوس
+                    style="text-align: left;margin-right:10px;color: #2ca02c">
+                Scopus
             </p></a>
 
         <a href="https://scholar.google.com/citations?hl=en&user=v39EKuIAAAAJ&view_op=list_works&sortby=pubdate"><p
-                    style="text-align: right;margin-right:10px;color: #2ca02c">
-                گوگل اسکلار
+                    style="text-align: left;margin-right:10px;color: #2ca02c">
+                Google Scholar
             </p></a>
 
         <a href="https://orcid.org/0000-0002-1050-7505"><p
-                    style="text-align: right;margin-right:10px;color: #2ca02c">
-                ارکید
+                    style="text-align: left;margin-right:10px;color: #2ca02c">
+                Orcid
             </p></a>
         <br>
         <div>

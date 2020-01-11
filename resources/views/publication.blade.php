@@ -9,7 +9,7 @@
                 اپتیکی</b></h3></div>
     <div
             style="background-image:url('{{asset("image/publication.png")}}') ;background-size: cover;
-                    background-repeat: no-repeat;width:100%;height:45%">
+                    background-repeat: no-repeat;width:100%;height:65%">
     </div>
     @include('layouts.navebar')
     <div style="text-align: right;margin-bottom:10px">
